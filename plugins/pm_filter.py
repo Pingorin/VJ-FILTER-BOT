@@ -127,7 +127,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("🔺sᴇᴀsᴏɴs🔺",  callback_data=f"seasons#{key}")
             ]
         )
-        btn.insert(0, [
+        btn.insert(0, [[
             IInlineKeyboardButton('📍ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ📍', url=f'https://t.me/+gSh-Tgwu6IJjOTM1')],[
             InlineKeyboardButton("🔺ʟᴀɴɢᴜᴀɢᴇs🔺", callback_data=f"languages#{key}"),
             InlineKeyboardButton("🔺ʏᴇᴀʀs🔺", callback_data=f"years#{key}")
@@ -3286,3 +3286,4 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
